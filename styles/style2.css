@@ -552,3 +552,26 @@ html {
       border-radius: 2px;
       opacity: 0.7;
     }
+
+    .button-enviar {
+      background-color: #4CAF50; /* verde */
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      transition: background-color 0.3s, transform 0.2s;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .button-enviar:hover {
+      background-color: #45a049;
+      transform: scale(1.05);
+  }
+  
+  .button-enviar:active {
+      background-color: #3e8e41;
+      transform: scale(0.98);
+  }

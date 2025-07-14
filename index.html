@@ -7,6 +7,32 @@
   <link rel="stylesheet" href="styles/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    .button-enviar {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        transition: background-color 0.3s, transform 0.2s;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    .button-enviar:hover {
+        background-color: #45a049;
+        transform: scale(1.05);
+    }
+    
+    .button-enviar:active {
+        background-color: #3e8e41;
+        transform: scale(0.98);
+    }
+    </style>
+    
+
 </head>
 <body>
   <header class="hero">
@@ -145,6 +171,7 @@
     </div>
   </section>
 
+
   <section id="experiencia" class="section bg-light">
     <div class="container">
       <h2 class="section-title">Experiencia y Proyectos</h2>
@@ -205,7 +232,7 @@
       <div class="experiencia-item">
         <div class="experiencia-header">
           <h3>Proyecto: Tienda en Línea de Café</h3>
-          <span class="fecha">2023 - Proyecto Universitario</span>
+          <span class="fecha">2023 - Proyecto Personal</span>
         </div>
         <p class="cargo">Desarrollo Full Stack</p>
         <p>E-commerce completo para una cafetería local, permitiendo a los clientes explorar productos, personalizar pedidos y realizar compras en línea.</p>
@@ -255,6 +282,36 @@
         <p><strong>Resultados:</strong> Precisión del 89% en la clasificación de 7 tipos diferentes de enfermedades dermatológicas.</p>
       </div>
 
+      <div class="experiencia-item">
+        <div class="experiencia-header">
+          <h3>Proyecto: Restaurante de Sushi</h3>
+          <span class="fecha">2025 - Proyecto Personal</span>
+        </div>
+        <p class="cargo">Desarrollo Front-End</p>
+        <p>E-commerce para un restaurante de sushi, permitiendo a los clientes explorar productos y realizar compras en línea.</p>
+        <ul class="lista-habilidades">
+          <li>Catálogo de productos</li>
+          <li>Carrito de compras funcional</li>
+        </ul>
+        <p><strong>Tecnologías utilizadas:</strong> HTML, Css y JavaScript</p>
+        <a href="https://github.com/honeisunnie/CoffeeShopWeb" target="_blank" class="btn btn-outline-primary">Ver en GitHub</a>
+      </div>
+
+      <div class="experiencia-item">
+        <div class="experiencia-header">
+          <h3>Proyecto: Página de Clinica</h3>
+          <span class="fecha">2025 - Proyecto Personal</span>
+        </div>
+        <p class="cargo">Desarrollo Front-End</p>
+        <p>E-commerce de una clinica, en donde se visualizan los medicos y sus respecitvas áreas, ademas de poder realizar reservas a consultas.</p>
+        <ul class="lista-habilidades">
+          <li>Reservas de consultas funcional</li>
+        </ul>
+        <p><strong>Tecnologías utilizadas:</strong> HTML, Css y JavaScript</p>
+        <a href="https://github.com/honeisunnie/CoffeeShopWeb" target="_blank" class="btn btn-outline-primary">Ver en GitHub</a>
+      </div>
+
+
       <div class="experiencia-item text-center">
         <h3>Mi CV Completo</h3>
         <p>Descarga mi currículum vitae para ver mi experiencia detallada, educación, certificaciones y más información profesional.</p>
@@ -283,23 +340,14 @@
             <a href="https://www.linkedin.com/in/paula-alcar%C3%A1s-villavicencio-8515a7220/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
           </div>
         </div>
-        <form id="form-contacto" class="contacto-form">
-          <div class="form-group">
-            <input type="text" placeholder="Tu nombre" required />
-          </div>
-          <div class="form-group">
-            <input type="email" placeholder="Tu correo electrónico" required />
-          </div>
-          <div class="form-group">
-            <input type="text" placeholder="Asunto" required />
-          </div>
-          <div class="form-group">
-            <textarea placeholder="Tu mensaje" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">
-            <i class="fas fa-paper-plane"></i> Enviar mensaje
-          </button>
-        </form>
+        <form action="https://formspree.io/f/xqalzlql" method="POST">
+          <label>Tu email:</label>
+          <input type="email" name="email" required>
+          <label>Mensaje:</label>
+          <textarea name="message" required></textarea>
+          <button class="button-enviar" type="submit">Enviar</button>
+      </form>
+    
       </div>
     </div>
   </section>
